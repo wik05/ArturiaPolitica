@@ -12,7 +12,7 @@ else:
     st.write('rentrez un concept')
 
 
-#if st.button('Regarder le tableau en entier'):
-#    st.write(df)
-#else:
-#    st.write('cliquer pour montrer')
+if st.button('Regarder le tableau en entier'):
+    st.write(df)
+else:
+    st.write('cliquer pour montrer')
