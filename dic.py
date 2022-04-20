@@ -7,7 +7,9 @@ df = pd.read_csv('dic_struct.csv')
 concept = st.text_input('Enter a concept')
 row = df.loc[df['Concepts'] == concept]
 if concept:
-    st.write(row)
+    row = row.dropna(axis=1)
+    for i in row.itertuples():
+        st.write(i)
 else:
     st.write('rentrez un concept')
 
